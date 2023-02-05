@@ -1,0 +1,23 @@
+#     iZcel      iZlel
+# iZcel: 0: sum of radii, 1: Hardouin-Duparc, 2: sum of radii with dependency on density
+# iZlel: 0: Seeger & Gösele, 1: Hardouin-Duparc, 2: FEM calculations with R based on dislocations
+#        3: encompassing spheres with dependency on density, 4: FEM calculations with R based on cluster density
+#        5: encompassing spheres with effective medium approach
+          0          0
+#       riv        Viv
+ 9.84e-08  4.0e-21
+#     kbmet
+          0
+# nvc
+  1
+#      type       rmet (0.5nm)      CK1c       CK2c        s1c        s2c        Zrv        Zri         Wr
+   1     0.5e-07 1.7530e-08    1.74000    0.33333    0.00000    1.00000    1.00000    1.00000
+# nic
+  1
+# type; rmet(0.5nm) ;burg(b111) ; CK1b  ;CK2b        s1b        s2b        Zrv        Zri              Wr   stress_t
+#   2     0.5e-07 2.05536e-08 9.3456e-09 4.305e+00    0.50000    0.15000    1.00000    1.00000    1.0000000000          1
+# iZlel=0,3,5:
+# ctype, rmet, burg(111), rP(2*b), Zrv, Zri, We, strees_type
+   2     0.5e-07 2.05536e-08 4.11e-08   1.00000    1.00000    1.0000000000          1
+  
+

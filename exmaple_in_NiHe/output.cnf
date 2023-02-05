@@ -1,0 +1,9 @@
+&ignorefiles
+Fuse(11) = .false.
+Fuse(10)= .false.
+Fuse(9) = .false.
+Fuse(5) = .false.
+Fuse(6) = .false.
+Fuse(7) = .false.
+Fuse(14) = .false.
+/

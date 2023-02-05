@@ -1,0 +1,73 @@
+# solvertype       ImEx
+# solvertype: 1: CVODES, 4: ARKODE; ImEx (only for ARKODE): 0: implicit, 1: explicit, 2: ImEx
+           1          0
+# atol: absolute tolerance for solution vector
+1.0e-8
+# rtol: relative tolerance for solution vector
+1.0e-04
+# usetolq: use specific tolerances for quadrature variables
+0
+# atolq: absolute tolerance for quadrature variables
+1.0e-15
+# rtolq: relative tolerance for quadrature variables
+1.0e-05
+# usetols: use specific tolerances for sensitivity variables
+0
+# atols: absolute tolerance for sensitivity variables
+1.0e-15
+# rtols: relative tolerance for sensitivity variables
+1.0e-05
+# sensi_meth: sensitivity method: simultaneous (1), staggered (2) and staggered1 (3)
+1
+# sensi_err_con: include sensitivity variables in the error tests
+0
+# sensi_dq_meth: difference quotient method: centered (1) or forward (2)
+1
+# sensi_dq_rhomax: selection parameter between simultaneous/separate approximation of the
+# two terms in the sensitivity right-hand side.
+0.0e+00
+# maximum number of non-linear solver iterations for sensitivity variables per step.
+3
+# ijac  ifun
+1  0
+# epstronc1
+0.0e+00
+# epstronc2
+1.0e+14
+# Cthreshold Coutneg lprintC0 lclipC
+1.0e-20 -1.0e+00 .true. .true.
+# period for back-up (= 0. if no back-up is needed)
+0.0e+00
+# linear solver
+# 1: dense, 4: dense lapack, 19: schur dense, 20: schur band, 21: MUMPS
+#22: schur dense lapack, 23: schur band lapack, 24: schur band lapack with reduced structure
+#25: schur dense lapack with reduced structure
+  21
+# distributed jacobian / RHS (MUMPS only)
+.false.  .false.
+#---------------------------
+# Optional inputs for cvodes
+#---------------------------
+&loptfcvin
+! 1 - integer inputs: IFCVSET
+!------
+! labels are:
+! - MAX_ORD      = 1
+! - MAX_NSTEPS   = 2
+! - MAX_ERRFAIL  = 3
+! - MAX_NITERS   = 4
+! - MAX_CONVFAIL = 5
+! - HNIL_WARNS   = 6
+! - STAB_LIM     = 7
+IFCVSET(3) = 15
+IFCVSET(2) = 100000
+!---------------------------
+! 2 - real inputs: RFCVSET
+!------
+! labels are:
+! INIT_STEP      = 1
+! MAX_STEP       = 2
+! MIN_STEP       = 3
+! STOP_TIME      = 4
+! NLCONV_COEF    = 5
+/

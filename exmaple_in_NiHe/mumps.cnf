@@ -1,0 +1,3 @@
+&listcntl
+mumps_par%ICNTL(7) = 6 ! QAMD ordering
+/

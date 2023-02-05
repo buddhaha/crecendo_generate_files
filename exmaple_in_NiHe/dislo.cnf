@@ -1,0 +1,55 @@
+# Data about dislocations and grain boundaries
+# isink: reemission from sinks (0: no; 1: yes)
+          0
+# Ndis: number of dislocation types
+          1
+# iZdel: use formulas based on isotropic elasticity?
+          0
+# Zi0(1:Ndis): absorption efficiencies without stress, for interstitials (used if iZdel = 0)
+     1.26
+# Zv0(1:Ndis): absorption efficiencies without stress, for vacancies (used if iZdel = 0)
+     1.
+# BurgDis(1:Ndis): Burgers vector of straight dislocations # b110: 2.517e-08 ; b111: 2.055e-08 w a0=3.56e-10[m]
+ 2.517e-08
+# rPDis(1:Ndisp): Pipe radius # 2*v-i recombination radius (2.84e-8)
+ 1.968666e-07
+# evoldis: evolution of the dislocation network (0: no; other values: yes)
+          1
+# constants for the evolution of the dislocation network # correspond coeff in the annihilation rate of dipoles
+#   evo_anni      cstcl1      cstcl2      cstcl3
+           2  180  1.0000e+00  1.3856e+01 ## new model with constants that might be adjusted.
+#     cstbh1      cstbh2 #### Bardeen-Herring ; not that much important.
+	0.0	1.0
+#     n2dmin       asigd       hdmin ### min size to be incorporated; hdmin: min value, if negative, calculated by the code > try to set it as burgers vector"
+ 72  0.45 2.055e-8
+# Orientations (degree)
+     0.0000
+# Orientation with respect to stress - theta (degrees)
+     0.0000
+# Orientation with respect to stress - khi (degrees)
+     0.0000
+# Segregation energy of a solute at dislocations (used only if isink = 1)
+ 0.0000e+00
+# Diffusion coefficients of solutes along dislocations
+# 1- Diffusion prefactors
+ 0.0000e+00
+# 1- Migration energies
+ 0.0000e+00
+# gbs (0 = none; 1 = grain boundary; 2 = two surfaces under irradiation;
+#      21 = two surfaces under annealing; 31 = one surface under annealing)
+          1
+# lgbs: grain size diameter (gbs = 1) or system width (gbs = 2) (cm)
+ 5.0000e-03
+# Ngbs: number of grain boundary types (used only if gbs = 1)
+          1
+# Orientations (degree)
+     0.0000
+# Surface fraction of each grain boundary type (the sum should be one)
+     1.0000
+# Segregation energy of a solute at grain boundaries (used only if isink = 1 and gbs = 1)
+ 0.0000e+00
+# Diffusion coefficients of solutes along grain boundaries
+# 1- Diffusion prefactors
+ 0.0000e+00
+# 1- Migration energies
+ 0.0000e+00

@@ -1,0 +1,26 @@
+## nmtion/mixing energies / to be used with FeHe files in crescendo
+#V Efv     Efi	   EfHe
+ 1.848   4.01    4.39
+# Formation entropies (kB)
+ 0.0 0.0 0.0
+#--------------------------------
+# Extrapolation laws
+#--------------------------------
+# ---- Interstitial clusters ----
+# s_23_V, s_23_I #
+ 0.6666666  0.666666
+# nic
+ 1
+# the surface energy may depend on temperature
+#     emode        clt      esurf      bperp      bpara         rc        esf     edelta    ecore
+       0   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   1.0000E+00
+#--------------------------------
+# nvc
+ 1
+##     emode     esurf0   desurfdT
+       0   0.0000E+00   0.0000E+00
+# Please provide at least EB(-2,0) and EB(2,0)
+# for extrapolation of binding energies. ## mm adn qq columns in v4.0?
+# nn   pp   EB      #    2    0  1  : 0.6 (Ni-Ni) <100> in Fe matrix: ref[Bonny pot] ; value: 0.97 ref [Domain, Perform-60]
+    2    0  1   1.426
+   -2    0  1   0.44

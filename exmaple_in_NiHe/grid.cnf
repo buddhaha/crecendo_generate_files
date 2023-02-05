@@ -1,0 +1,13 @@
+# wfoil
+ 0.0000e+00
+# Ngrid
+          1
+# Coordinate type
+ cartesian   
+#      BC_l       BC_r
+          0          0
+# VarParam
+          0
+# Number of grid progression steps
+          0
+# Step progression types
