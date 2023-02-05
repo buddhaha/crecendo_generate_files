@@ -38,7 +38,7 @@ r         20
 # maximum number of cluster types
           1
 #       Noi        Nci        Nov        Ncv        Nob        Ncb
-        100        400        100        400	100	 400
+        100        400        100        400	0	 0
 # number of step progression types for I, V and S axes
           1          1          1
 # step progression types for I
@@ -50,7 +50,7 @@ r         20
 #        mi         mv         mb
          1           1          0
 # Tk
-  483 
+603.0
 # tolerances for the conservation of matter
 1.0000e-01
 1.0000e-01
